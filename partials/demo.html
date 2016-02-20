@@ -1,0 +1,130 @@
+<header>
+    <div class="container">
+        <h1>My Test Store</h1>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row margin-top-md">
+        <div class="col-md-8">
+            <form id="checkout_form" method="post" action="/verify/">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Air Conditioner SPL 1.5 HP NP</td>
+                            <td>1</td>
+                            <td>&#8358; 550</td>
+                        </tr>
+                        <tr>
+                            <td>Air Conditioner Instalation Kit 5hp</td>
+                            <td>1</td>
+                            <td>&#8358; 500</td>
+                        </tr>
+                        <tr>
+                            <td>5M Cables</td>
+                            <td>1</td>
+                            <td>&#8358; 500</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Total</td>
+                            <td>&#8358;
+                                <input type="text" value="1550" readonly/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Total + Shipping</td>
+                            <td>&#8358;
+                                <input type="text" id="amount" name="amount" value="1600" readonly/>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </form>
+        </div>
+
+        <div class="col-md-4">
+            <div class="col-md-12 summary">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Order Summary</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>Items:</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>&#8358; 1,550</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>Shipping & Handling:</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>&#8358;
+                            <input type="text" id="shipping_costs" value="50" readonly/>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p><b>Total:</b></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>&#8358;
+                            <input type="text" value="1600" readonly/>
+                        </p>
+                    </div>
+                </div>
+                <hr/>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Shipping Address</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>31 Kade St, Abuja, Nigeria</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Billing Information</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>John Doe</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>31 Kade St, Abuja, Nigeria</p>
+                    </div>
+                </div>
+
+                <div class="row margin-top-lg">
+                    <div class="col-md-12">
+                        <button id="btn-checkout" class="btn btn-lg btn-block simplepay-button" md-ink-ripple ng-click="demoVM.makePayment()">
+                            <span>Pay with</span>
+                            <img src="https://developers.simplepay.ng/img/simplepay-white-logo.png" alt="SimplePay Pay Button" />
+                        </button>
+                    </div>
+                </div>
+                <br/>
+            </div>
+        </div>
+    </div>
+</div>

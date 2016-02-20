@@ -1,0 +1,76 @@
+html {
+            font-size: 100%;
+        }
+
+        h1 {
+            color: #77439E;
+        }
+
+        h2 {
+            color: #77439E;
+        }
+
+        h3 {
+            color: #bc75f3;
+        }
+
+        .margin-top-sm {
+            margin-top: .5rem;
+        }
+
+        .margin-top-md {
+            margin-top: 1rem;
+        }
+
+        .margin-top-lg {
+            margin-top: 2rem;
+        }
+
+        input[type='number'] {
+            width: 4rem;
+            text-indent: .2rem;
+        }
+
+        input[type='text'] {
+            width: 3rem;
+            border: none;
+            background: transparent;
+        }
+
+        button.simplepay-button,
+        button.simplepay-button:hover {
+            background: #77439E;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        button.simplepay-button span {
+            position: relative;
+            top: .3rem;
+        }
+
+        button.simplepay-button img {
+            height: 32px;
+        }
+
+        table thead tr {
+            color: #ffffff;
+            background: #77439E;
+        }
+
+        table tfoot tr {
+            background: #F5EFF9;
+            font-weight: bold;
+        }
+
+        table tfoot tr:nth-child(1) {
+            border-top: 3px solid #ffffff;
+        }
+
+        table tfoot tr td {
+            border-top: 1px solid transparent !important;
+        }
+
+        .summary {
+            background: #F8F8F8;
+        }

@@ -1,0 +1,30 @@
+{
+  "name": "angular-simplepay-demo",
+  "authors": [
+    "Akinmade Bond <bondz@users.noreply.github.com>"
+  ],
+  "description": "A demo app to make payments in angular using SimplePay",
+  "main": "",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "SimplePay",
+    "angular"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-material": "^1.0.5",
+    "angular-ui-router": "^0.2.18",
+    "bootstrap": "^3.3.6"
+  }
+}
