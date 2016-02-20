@@ -1,5 +1,8 @@
 # angular-simplepay-demo
-Use SimplePay (http://simplepay.ng) with Angular
+Demo: Use [SimplePay](http://simplepay.ng) with Angular
 
+### Install
+```bash
 npm install
 liveserver
+```
