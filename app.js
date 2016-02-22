@@ -1,3 +1,5 @@
+/* global angular */
+/* global SimplePay */
 (function () {
     angular.module("SimplePayDemo", ['ngMaterial', 'ui.router'])
         .config(configureRoutes)
@@ -11,7 +13,7 @@
 
         function activate() {
             handler = SimplePay.configure({
-                token: processPayment,
+                token: verifyPayment,
                 key: 'test_pu_demo',
                 image: ''
             });
@@ -26,13 +28,13 @@
                 postal_code: '110001',
                 city: 'Abuja',
                 country: 'NG',
-                amount: "1600.00",
+                amount: "160000", //This asks the user to pay 1,600 not 160,000 
                 currency: 'NGN'
             });
         }
 
-        function processPayment(token) {
-            //ToDo: create a service to validate token on server.
+        function verifyPayment(token) {
+            //Verify the token in your backend using a service with promise that gets resolved or rejected here.                        
         }
     }
 
